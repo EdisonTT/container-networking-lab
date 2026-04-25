@@ -8,13 +8,16 @@ This is not a tutorial repo, it is a **learning journal + experimental lab** foc
 
 ## 🎯 Objective
 
-To deeply understand:
+To build a strong mental model of container networking to **design better systems**.
 
-- How containers actually work (not just how to run them)
-- Linux networking fundamentals behind Docker
-- Kernel-level concepts like namespaces, veth, and iptables
-- Port binding, NAT, and container communication
-- System behavior through real experiments
+We aim to understand:
+
+- How containers practically connect and isolate (Namespaces, Bridges, veth)
+- The actual wiring behind Port Binding and NAT
+- Network fundamentals required to architect robust microservices
+- System behavior and troubleshooting through hands-on experiments
+
+*(Note: The goal is not to get lost in deep kernel hacking, but to master the underlying network abstractions so we can confidently design and debug complex system architectures.)*
 
 ---
 
@@ -47,16 +50,12 @@ Every experiment includes:
 ---
 ## 📂 Repo Structure
 
-```
-│
+```text
+.
 ├── README.md
-├── server-setup/
-├── images/
-
-├── experiments/
-├── notes/
-└── diagrams/
-├── veth.png
-├── docker-bridge.png
+├── setups/        # Installation and server configuration guides
+├── notes/         # Theoretical concepts and deep dives (Docker, Linux)
+├── cheatsheets/   # Quick reference commands and abbreviations
+├── experiments/   # Step-by-step practical lab procedures
+└── images/        # Proof, results, and screenshots
 ```
-
